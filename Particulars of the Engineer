@@ -1,0 +1,82 @@
+#include<iostream>
+using namespace std;
+class info
+{
+    public:
+    char a[100];
+    int b,c,d;
+    char e[100];
+    void d1()
+	{
+	    
+	    cout<<"Enter the first name = ";
+		cin>>a;
+		cout<<endl;
+	}
+	void d2()
+	{
+		
+		cout<<"Enter the identity number = ";
+		cin>>b;
+		cout<<endl;
+	}
+	void d3()
+	{
+	
+cout<<"Enter the age = ";
+		cin>>c;
+		cout<<endl;
+	}
+	void d4()
+	{
+		
+		cout<<"Enter the salary = ";
+		cin>>d;
+		cout<<endl;
+	}
+	void d5()
+	{
+	    
+	    cout<<"Enter the designation of the Engineer: ";
+	    cin>>e;
+	    cout<<endl;
+	}
+};
+class display:public info
+{
+    public:
+    void d10()
+	{
+	    cout<<"Name = "<<a<<endl;
+	}
+	void d9()
+	{
+		cout<<"Identity Number = "<<b<<endl;
+	}
+	void d8()
+	{
+	    cout<<"Age = "<<c<<endl;
+	}
+	void d7()
+	{
+		cout<<"Salary = "<<d<<endl;
+}
+	void d6()
+	{
+	    cout<<"Designition = "<<e<<endl;
+	}
+}pin;
+int main()
+{
+    pin.d1();
+    pin.d2();
+    pin.d3(); 
+    pin.d4(); 
+    pin.d5(); 
+    cout<<"Displaying the particulars of the Engineer"<<endl;
+    pin.d10();
+    pin.d9();
+    pin.d8();
+    pin.d7();
+    pin.d6();
+}
