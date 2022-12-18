@@ -1,0 +1,44 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+class bat
+{
+    public:
+    int a,b,c,d;
+    void a1(){
+        cout<<"enter the number of matches played"<<endl;
+        cin>>a;
+    }
+    void a2(){
+        cout<<"enter the number innings batted"<<endl;
+        cin>>b;
+    }
+    void a3(){
+        cout<<"enter number of times notout"<<endl;
+        cin>>c;
+    }
+    void a4(){
+        cout<<"enter runs scored"<<endl;
+        cin>>d;
+    }
+};
+
+class output:public bat
+{
+    public:
+    float y,x;
+    void b1(){
+    x=b-c;
+    y=d/x;
+    cout<<"batting average="<<fixed<<setprecision(1)<<y;
+    }
+}up;
+
+int main()
+{
+    up.a1();
+    up.a2();
+    up.a3();
+    up.a4();
+    up.b1();
+}
